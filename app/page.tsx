@@ -9,11 +9,9 @@ export default function Home() {
 return(
   
   <div className="absolute left-[50%]">
-      <TypingText duration={100}>
             <button onClick={() => router.push("/Darf")}>Дарф</button>
             <button onClick={() => router.push("/Darf")}>Дарф</button>
             <h1>добро пожаловать</h1>
-            </TypingText>
           </div>
           
   )
