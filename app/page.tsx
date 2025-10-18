@@ -40,7 +40,7 @@ export default function Home() {
       
       <button 
         onClick={() => router.push("/Darf")}
-        className="relative group px-12 py-8 rounded-2xl overflow-hidden border border-white/10 
+        className="relative group px-30 py-8 rounded-2xl overflow-hidden border border-white/10 
                   bg-gradient-to-r from-pink-600 to-red-600 hover:from-pink-700 hover:to-red-700 
                   transition-all duration-500 transform hover:scale-[1.08] shadow-xl"
       >
