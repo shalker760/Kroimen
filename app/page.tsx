@@ -2,7 +2,6 @@
 
 import React from "react"
 import { useRouter } from "next/navigation"
-import { TypingText, Color, Shake, Blink, Bold } from '@/components/text'
 
 export default function Home() {
   const router = useRouter()
