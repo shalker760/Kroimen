@@ -3,18 +3,30 @@
 import React, { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 
-// Component for typing animation
 const TypingText = ({ text }: { text: string }) => {
   const [displayedText, setDisplayedText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
 
+  // Обеспечиваем запуск анимации при монтировании
   useEffect(() => {
-    if (currentIndex < text.length) {
+    if (currentIndex === 0 && text.length > 0) {
       const timer = setTimeout(() => {
-        setDisplayedText(prev => prev + text[currentIndex])
-        setCurrentIndex(prev => prev + 1)
-      }, 100) // 100ms delay between characters
+        setCurrentIndex(1)
+      }, 10) // Минимальная задержка для запуска
       return () => clearTimeout(timer)
+    }
+  }, [text]) // Запускается только при изменении текста или монтировании
+
+  // Основная логика анимации
+  useEffect(() => {
+    if (currentIndex <= text.length) {
+      setDisplayedText(text.slice(0, currentIndex))
+      if (currentIndex < text.length) {
+        const timer = setTimeout(() => {
+          setCurrentIndex(prev => prev + 1)
+        }, 100) // Задержка между символами
+        return () => clearTimeout(timer)
+      }
     }
   }, [currentIndex, text])
 
