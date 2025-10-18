@@ -31,7 +31,7 @@ export default function Home() {
   const router = useRouter()
   
   return (
-    <div className="absolute left-1/2 top-0 -translate-x-1/2 mt-24 flex gap-32">
+    <div className="absolute left-1/2 top-0 -translate-x-1/2 mt-24 flex gap-48">
       <button 
         onClick={() => router.push("/Darf")}
         className="relative group px-16 py-12 rounded-3xl overflow-hidden 
