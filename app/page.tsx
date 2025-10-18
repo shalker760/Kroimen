@@ -31,10 +31,10 @@ export default function Home() {
   const router = useRouter()
   
   return (
-    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-16">
+    <div className="absolute left-1/2 top-0 -translate-x-1/2 mt-24 flex gap-32">
       <button 
         onClick={() => router.push("/Darf")}
-        className="relative group px-14 py-10 rounded-3xl overflow-hidden 
+        className="relative group px-16 py-12 rounded-3xl overflow-hidden 
                   bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-xl 
                   border border-white/10 shadow-[0_0_20px_rgba(128,90,255,0.3)]
                   transition-all duration-500 hover:shadow-[0_0_40px_rgba(128,90,255,0.5)]
@@ -47,7 +47,7 @@ export default function Home() {
       
       <button 
         onClick={() => router.push("/Darf")}
-        className="relative group px-14 py-10 rounded-3xl overflow-hidden 
+        className="relative group px-16 py-12 rounded-3xl overflow-hidden 
                   bg-gradient-to-br from-pink-900/20 to-red-900/20 backdrop-blur-xl 
                   border border-white/10 shadow-[0_0_20px_rgba(255,70,130,0.3)]
                   transition-all duration-500 hover:shadow-[0_0_40px_rgba(255,70,130,0.5)]
