@@ -60,6 +60,8 @@ export default function Home() {
         <div className="button-container">
           <div className="spcae-y-4">
             <button onClick={() => router.push("/Darf")}>Дарф</button>
+              <button onClick={() => router.push("/Darf")}>Дарф</button>
+                <button onClick={() => router.push("/Darf")}>Дарф</button>
           </div>
         </div>
     </div>
