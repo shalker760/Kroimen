@@ -61,10 +61,6 @@ export default function Home() {
             <button onClick={() => router.push("/Darf")}>встать</button>
           </div>
         </div>
-      
-      {/* Декоративные элементы */}
-      <div className="absolute top-10 left-10 w-32 h-32 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce"></div>
-      <div className="absolute bottom-10 right-10 w-40 h-40 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
     </div>
   )
 }
