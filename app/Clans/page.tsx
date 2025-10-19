@@ -52,9 +52,18 @@ export default function Home() {
           <TypingText text="здесь будут кланы" />
         </h1>
         
-        <p className="text-xl text-white/80 leading-relaxed">
-          <TypingText text="список кланов будет позже." />
-        </p>
+                <div className="mt-8">
+          <div className="grid grid-cols-3 gap-4">
+            <button onClick={() => router.push("/")}>Главная</button>
+            <button onClick={() => router.push("/News")}>Новости</button>
+            <button onClick={() => router.push("/Clans")}>Кланы</button>
+            <button onClick={() => router.push("/Alaham")}>Алахам</button>
+            <button onClick={() => router.push("/Rayn")}>Райн</button>
+            <button onClick={() => router.push("/Lorest")}>Лорест</button>
+            <button onClick={() => router.push("/Larm")}>Ларм</button>
+            <button onClick={() => router.push("/Darf")}>Дарф</button>
+          </div>
+        </div>
       </div>
 
         <div className="button-container">
