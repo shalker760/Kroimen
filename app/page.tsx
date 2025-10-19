@@ -22,7 +22,7 @@ const TypingText = ({ text }: { text: string }) => {
       if (currentIndex < text.length) {
         const timer = setTimeout(() => {
           setCurrentIndex(prev => prev + 1)
-        }, 120)
+        }, 50)
         
         return () => clearTimeout(timer)
       }
