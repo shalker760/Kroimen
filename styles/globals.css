@@ -54,7 +54,7 @@ input:focus {
     width: 100%;
     display: flex;
     justify-content: center; /* Центрирование кнопок */
-    gap: 10px; /* Расстояние между кнопками */
+    gap: 50px; /* Расстояние между кнопками */
     padding: 10px;
     background: rgb(51, 51, 51);
     z-index: 9999; /* Всегда поверх других элементов */
