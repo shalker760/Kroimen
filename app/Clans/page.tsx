@@ -52,7 +52,7 @@ export default function Home() {
           <TypingText text="здесь будут кланы" />
         </h1>
         
-                <div className="button-shit mt-8">
+            {/* <div className="button-shit mt-8">
           <div className="grid grid-cols-3 gap-4">
             <button onClick={() => router.push("/")}>Главная</button>
             <button onClick={() => router.push("/News")}>Новости</button>
@@ -63,7 +63,7 @@ export default function Home() {
             <button onClick={() => router.push("/Larm")}>Ларм</button>
             <button onClick={() => router.push("/Darf")}>Дарф</button>
           </div>
-        </div>
+        </div> */}
       </div>
 
         <div className="button-container">
