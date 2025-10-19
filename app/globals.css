@@ -3,7 +3,7 @@
 /* Основные переменные */
 :root {
   --background: #ffffff;
-  --foreground: #ffffff;
+  --foreground: #000000;
   --font-sans: 'Arial', 'Helvetica', sans-serif;
 }
 
@@ -11,7 +11,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
-    --foreground: #ededed;
+    --foreground: #ffffff;
   }
 }
 

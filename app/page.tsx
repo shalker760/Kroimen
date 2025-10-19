@@ -41,10 +41,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 
                    flex items-center justify-center p-8 relative overflow-hidden">
-      {/* Фоновые частицы */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_0%,transparent_70%)]"></div>
-            
-      <button 
+                        <button 
         onClick={() => router.push("/Darf")}
         className="relative group px-16 py-12 rounded-3xl overflow-hidden 
                   bg-gradient-to-br from-pink-900/20 to-red-900/20 backdrop-blur-xl 
@@ -57,6 +54,9 @@ export default function Home() {
         <TypingText text="Дарф" />
       </button>
       
+      {/* Фоновые частицы */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_0%,transparent_70%)]"></div>
+            
       {/* Основной контент */}
       <div className="max-w-4xl text-center relative z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text 
