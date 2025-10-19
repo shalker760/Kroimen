@@ -57,7 +57,7 @@ export default function Home() {
         </p>
       </div>
 
-        <div className="absolute bottom-[5%] left-[50%] translate-x-[-50%]">
+        <div className="button-container">
           <div className="spcae-y-4">
             <button onClick={() => router.push("/Darf")}>Дарф</button>
           </div>

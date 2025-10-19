@@ -45,3 +45,36 @@ input:focus {
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
+
+/* Фиксируем кнопки в верхней части экрана */
+.button-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Центрирование кнопок */
+    gap: 10px; /* Расстояние между кнопками */
+    padding: 10px;
+    background: white;
+    z-index: 9999; /* Всегда поверх других элементов */
+}
+
+/* Стили для кнопок */
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Эффект при наведении */
+.button-container button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
