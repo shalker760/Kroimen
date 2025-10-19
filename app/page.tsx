@@ -56,18 +56,11 @@ export default function Home() {
         </p>
       </div>
 
-      <button 
-        onClick={() => router.push("/Darf")}
-        className="relative group px-16 py-12 rounded-3xl overflow-hidden 
-                  bg-gradient-to-br from-pink-900/20 to-red-900/20 backdrop-blur-xl 
-                  border border-white/10 shadow-[0_0_20px_rgba(255,70,130,0.3)]
-                  transition-all duration-500 hover:shadow-[0_0_40px_rgba(255,70,130,0.5)]
-                  transform hover:rotate-1 hover:scale-105"
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-500/30 to-red-500/30 
-                      opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <TypingText text="Дарф" />
-      </button>
+        <div className="absolute bottom-[5%] left-[50%] translate-x-[-50%]">
+          <div className="spcae-y-4">
+            <button onClick={() => router.push("/Darf")}>встать</button>
+          </div>
+        </div>
       
       {/* Декоративные элементы */}
       <div className="absolute top-10 left-10 w-32 h-32 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce"></div>
