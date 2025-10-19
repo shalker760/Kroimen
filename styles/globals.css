@@ -56,7 +56,7 @@ input:focus {
     justify-content: center; /* Центрирование кнопок */
     gap: 10px; /* Расстояние между кнопками */
     padding: 10px;
-    background: rgb(17, 17, 17);
+    background: rgb(51, 51, 51);
     z-index: 9999; /* Всегда поверх других элементов */
 }
 
@@ -67,14 +67,14 @@ input:focus {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
-    background-color: #230130;
+    background-color: #3d0055;
     color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* Эффект при наведении */
 .button-container button:hover {
-    background-color: #11001a;
+    background-color: #8200c9;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
