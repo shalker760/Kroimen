@@ -78,3 +78,21 @@ input:focus {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
+
+.button-shit button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #3d0055;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Эффект при наведении */
+.button-shit button:hover {
+    background-color: #8200c9;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
