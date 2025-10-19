@@ -63,6 +63,7 @@ export default function Home() {
 
         <div className="button-container">
           <div className="spcae-y-4">
+            <button onClick={() => router.push("/")}>Главная</button>
             <button onClick={() => router.push("/News")}>Новости</button>
             <button onClick={() => router.push("/Clans")}>Кланы</button>
             <button onClick={() => router.push("/Alaham")}>Алахам</button>
