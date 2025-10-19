@@ -41,21 +41,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 
                    flex items-center justify-center p-8 relative overflow-hidden">
-                        <button 
-        onClick={() => router.push("/Darf")}
-        className="relative group px-16 py-12 rounded-3xl overflow-hidden 
-                  bg-gradient-to-br from-pink-900/20 to-red-900/20 backdrop-blur-xl 
-                  border border-white/10 shadow-[0_0_20px_rgba(255,70,130,0.3)]
-                  transition-all duration-500 hover:shadow-[0_0_40px_rgba(255,70,130,0.5)]
-                  transform hover:rotate-1 hover:scale-105"
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-500/30 to-red-500/30 
-                      opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <TypingText text="Дарф" />
-      </button>
-      
       {/* Фоновые частицы */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_0%,transparent_70%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(243, 235, 235, 0.05)_0%,transparent_70%)]"></div>
             
       {/* Основной контент */}
       <div className="max-w-4xl text-center relative z-10">
@@ -68,6 +55,19 @@ export default function Home() {
           <TypingText text="Это информационный сайт, где вы найдете последние новости, прогноз погоды, информацию о слоях и регионах, кланах и сможете отправлять свои запросы жителям." />
         </p>
       </div>
+
+      <button 
+        onClick={() => router.push("/Darf")}
+        className="relative group px-16 py-12 rounded-3xl overflow-hidden 
+                  bg-gradient-to-br from-pink-900/20 to-red-900/20 backdrop-blur-xl 
+                  border border-white/10 shadow-[0_0_20px_rgba(255,70,130,0.3)]
+                  transition-all duration-500 hover:shadow-[0_0_40px_rgba(255,70,130,0.5)]
+                  transform hover:rotate-1 hover:scale-105"
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-pink-500/30 to-red-500/30 
+                      opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <TypingText text="Дарф" />
+      </button>
       
       {/* Декоративные элементы */}
       <div className="absolute top-10 left-10 w-32 h-32 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-bounce"></div>
