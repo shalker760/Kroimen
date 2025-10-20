@@ -57,7 +57,7 @@ export default function Home() {
         </p>
         
          <p className="text-xl text-white/80 leading-relaxed">
-          <TypingText text="Союзники: Крулакс" />
+          <TypingText text="Союзники:" /> <button onClick={() => router.push("/")}>Главная</button>
         </p>
       </div>
 
