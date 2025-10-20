@@ -53,13 +53,19 @@ export default function Home() {
 Во главе «Диверсии» стоит Детроид Вилд — существо, если это слово ещё применимо к нему, ставший одним из порождений тех самых лабораторий, с которыми он ныне ведёт беспощадную войну. Созданный в результате чудовищных экспериментов, он вынес из них не только искажённое тело, но и безграничную жажду возмездия. Его миссия — стереть с лица земли всё, что напоминает о тех, кто посмел поставить науку выше страдания живого существа" />
         </p>
           <p className="text-xl text-white/80 leading-relaxed">
-          <TypingText text="Враги: Вивер" />
+          <TypingText text="Враги:"/>
+          <div className="button-shit mt-8">
+          <div className="grid grid-cols-3 gap-4">
+            <button onClick={() => router.push("/Viver")}>Вивер</button>
+          </div>
+        </div>
         </p>
         
          <p className="text-xl text-white/80 leading-relaxed">
-          <TypingText text="Союзники:" /> <div className="button-shit mt-8">
+          <TypingText text="Союзники:" />
+          <div className="button-shit mt-8">
           <div className="grid grid-cols-3 gap-4">
-            <button onClick={() => router.push("/Krul")}>Крулаксы</button>
+            <button onClick={() => router.push("/Diversia")}>Диверсия</button>
           </div>
         </div>
         </p>
