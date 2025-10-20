@@ -40,7 +40,6 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 
                    flex items-center justify-center p-8 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(243, 235, 235, 0.05)_0%,transparent_70%)]"></div>
-            
       <div className="max-w-4xl text-center relative z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold bg-clip-text 
                       bg-gradient-to-r mb-8">
@@ -49,14 +48,8 @@ export default function Home() {
         
             {/* <div className="button-shit mt-8">
           <div className="grid grid-cols-3 gap-4">
-            <button onClick={() => router.push("/")}>Главная</button>
-            <button onClick={() => router.push("/News")}>Новости</button>
-            <button onClick={() => router.push("/Clans")}>Кланы</button>
-            <button onClick={() => router.push("/Alaham")}>Алахам</button>
-            <button onClick={() => router.push("/Rayn")}>Райн</button>
-            <button onClick={() => router.push("/Lorest")}>Лорест</button>
-            <button onClick={() => router.push("/Larm")}>Ларм</button>
-            <button onClick={() => router.push("/Darf")}>Дарф</button>
+            <button onClick={() => router.push("/Diversia")}>Диверсия</button>
+            <button onClick={() => router.push("/Viver")}>Вивер</button>
           </div>
         </div> */}
       </div>

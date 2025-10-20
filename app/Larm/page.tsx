@@ -2,19 +2,16 @@
 
 import React, { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import router from "next/router"
 
 const TypingText = ({ text }: { text: string }) => {
   const [displayedText, setDisplayedText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  // Перезапуск анимации при изменении текста
   useEffect(() => {
     setDisplayedText("")
     setCurrentIndex(0)
   }, [text])
 
-  // Анимация печатания
   useEffect(() => {
     if (currentIndex <= text.length) {
       setDisplayedText(text.slice(0, currentIndex))
@@ -42,10 +39,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 
                    flex items-center justify-center p-8 relative overflow-hidden">
-      {/* Фоновые частицы */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(243, 235, 235, 0.05)_0%,transparent_70%)]"></div>
-            
-      {/* Основной контент */}
       <div className="max-w-4xl text-center relative z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold bg-clip-text 
                       bg-gradient-to-r mb-8">
