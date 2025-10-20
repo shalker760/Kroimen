@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
+import router from "next/router"
 
 const TypingText = ({ text }: { text: string }) => {
   const [displayedText, setDisplayedText] = useState("")
@@ -44,21 +45,16 @@ export default function Home() {
       <div className="max-w-4xl text-center relative z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold bg-clip-text 
                       bg-gradient-to-r mb-8">
-          <TypingText text="здесь будут кланы" />
+          <TypingText text="Дарф" />
         </h1>
         
-            {/* <div className="button-shit mt-8">
-          <div className="grid grid-cols-3 gap-4">
-            <button onClick={() => router.push("/")}>Главная</button>
-            <button onClick={() => router.push("/News")}>Новости</button>
-            <button onClick={() => router.push("/Clans")}>Кланы</button>
-            <button onClick={() => router.push("/Alaham")}>Алахам</button>
-            <button onClick={() => router.push("/Rayn")}>Райн</button>
-            <button onClick={() => router.push("/Lorest")}>Лорест</button>
-            <button onClick={() => router.push("/Larm")}>Ларм</button>
-            <button onClick={() => router.push("/Darf")}>Дарф</button>
-          </div>
-        </div> */}
+        <p className="text-xl text-white/80 leading-relaxed">
+          <TypingText text=" это слой, в который никогда не проникает солнце. Не потому, что он скрыт под землёй, а потому что само светило будто отвернулось от него, прокляв навеки. Здесь царит вязкий сумрак, не рассеиваемый ни огнём, ни временем. Воздух пропитан гарью и металлом, а земля стонет под тяжестью рудников и пещер, из которых жители Кроймена извлекают то, что питает верхние миры: руду, нефть, газ, золото и иные сокровища, за которые проливается не меньше крови, чем пота.
+
+Дарфийцы — народ крепкий, молчаливый, выточенный самой тьмой. Их глаза с рождения видят в темноте так же ясно, как другие видят при свете дня, но солнечные лучи для них — смертельный яд. Когда кому-то из них приходится подниматься наверх, они надевают тёмные очки, не как украшение, а как оберег от слепящей ярости солнца.
+
+Говорят, что в венах дарфийцев течёт не кровь, а угольная пыль, и что сердца их бьются в такт глухим ударам шахтных машин. Они не боятся глубин — ведь глубины боятся их." />
+        </p>
       </div>
 
         <div className="button-container">

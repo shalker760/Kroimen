@@ -53,14 +53,12 @@ input:focus {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: center; /* Центрирование кнопок */
-    gap: 50px; /* Расстояние между кнопками */
+    justify-content: center;
+    gap: 50px;
     padding: 10px;
     background: rgb(51, 51, 51);
-    z-index: 9999; /* Всегда поверх других элементов */
+    z-index: 9999;
 }
-
-/* Стили для кнопок */
 .button-container button {
     padding: 10px 20px;
     border: none;
@@ -71,8 +69,6 @@ input:focus {
     color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
-/* Эффект при наведении */
 .button-container button:hover {
     background-color: #8200c9;
     transform: scale(1.05);
@@ -89,8 +85,6 @@ input:focus {
     color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
-/* Эффект при наведении */
 .button-shit button:hover {
     background-color: #8200c9;
     transform: scale(1.05);
