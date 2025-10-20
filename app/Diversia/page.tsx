@@ -57,7 +57,12 @@ export default function Home() {
         </p>
         
          <p className="text-xl text-white/80 leading-relaxed">
-          <TypingText text="Союзники:" /> <button onClick={() => router.push("/")}>Главная</button>
+          <TypingText text="Союзники:" /> <div className="button-shit mt-8">
+          <div className="grid grid-cols-3 gap-4">
+            <button onClick={() => router.push("/Diversia")}>Диверсия</button>
+            <button onClick={() => router.push("/Viver")}>Вивер</button>
+          </div>
+        </div>
         </p>
       </div>
 
