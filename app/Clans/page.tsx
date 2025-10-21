@@ -43,15 +43,17 @@ export default function Home() {
       <div className="max-w-4xl text-center relative z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold bg-clip-text 
                       bg-gradient-to-r mb-8">
-          <TypingText text="здесь будут кланы" />
+          <TypingText text="известные кланы" />
         </h1>
         
-            {/* <div className="button-shit mt-8">
+            <div className="button-shit mt-8">
           <div className="grid grid-cols-3 gap-4">
             <button onClick={() => router.push("/Diversia")}>Диверсия</button>
             <button onClick={() => router.push("/Viver")}>Вивер</button>
+            <button onClick={() => router.push("/Krul")}>Крулаксы</button>
+            <button onClick={() => router.push("/Mirovozdanie")}>Мировоздание</button>
           </div>
-        </div> */}
+        </div>
       </div>
 
         <div className="button-container">
