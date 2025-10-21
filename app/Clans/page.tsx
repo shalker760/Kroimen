@@ -50,7 +50,7 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-4">
             <button onClick={() => router.push("/Diversia")}>Диверсия</button>
             <button onClick={() => router.push("/Viver")}>Вивер</button>
-            <button onClick={() => router.push("/Krul")}>Крулаксы</button>
+            <button onClick={() => router.push("/Krul")}>Крул</button>
             <button onClick={() => router.push("/Mirovozdanie")}>Мировоздание</button>
           </div>
         </div>
