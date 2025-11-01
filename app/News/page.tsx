@@ -53,6 +53,10 @@ export default function Home() {
         <p className="text-xl text-white/80 leading-relaxed">
         <TypingText text="26.10 возле закрытых шахт были замечены культисты пока что они просто ходят и наблюдают их мотивы еще неизвестны" />
         </p>
+
+        <p className="text-xl text-white/80 leading-relaxed">
+                <TypingText text="01.11 в Ларме была замечена подозрительная группа людей из 3 человек которые 'бесцельно' ходили по территории и что-то искали в данный момент они задержаны и допрашиваются" />
+                        </p>
       </div>
 
         <div className="button-container">
