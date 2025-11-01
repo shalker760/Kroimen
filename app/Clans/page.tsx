@@ -51,7 +51,6 @@ export default function Home() {
             <button onClick={() => router.push("/Diversia")}>Диверсия</button>
             <button onClick={() => router.push("/Viver")}>Вивер</button>
             <button onClick={() => router.push("/Krul")}>Крул</button>
-            <button onClick={() => router.push("/Mirovozdanie")}>Мировоздание</button>
             <button onClick={() => router.push("/Raferrin")}>Раферрин</button>
           </div>
         </div>
