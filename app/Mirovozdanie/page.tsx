@@ -40,21 +40,27 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 
                    flex items-center justify-center p-8 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(243, 235, 235, 0.05)_0%,transparent_70%)]"></div>
+            
       <div className="max-w-4xl text-center relative z-10">
         <h1 className="text-5xl md:text-7xl font-extrabold bg-clip-text 
                       bg-gradient-to-r mb-8">
-          <TypingText text="известные кланы" />
+          <TypingText text="Мировоздание" />
         </h1>
         
-            <div className="button-shit mt-8">
-          <div className="grid grid-cols-3 gap-4">
-            <button onClick={() => router.push("/Diversia")}>Диверсия</button>
-            <button onClick={() => router.push("/Viver")}>Вивер</button>
-            <button onClick={() => router.push("/Krul")}>Крул</button>
-            <button onClick={() => router.push("/Mirovozdanie")}>Мировоздание</button>
-            <button onClick={() => router.push("/Raferrin")}>Раферрин</button>
-          </div>
-        </div>
+        <p className="text-xl text-white/80 leading-relaxed">
+          <TypingText text=" это клан, открытый для всех, кто стремится к познанию. Его основатели — люди, пришедшие из слоя Ларм, обычные на первый взгляд, но объединённые единым стремлением понять суть мира. Они именуют себя Мирозданием — символом гармонии между человеком и Вселенной.
+
+Главная цель клана благородна: исследовать устройство мира ради его совершенствования и развития, постичь законы бытия, чтобы использовать полученные знания во благо — для защиты невинных и противостояния силам зла.
+
+На данный момент численность их невелика — всего восемь участников, но их ряды неуклонно растут. Несмотря на скромное происхождение, каждый из них обладает внутренней силой и стремлением к истине. Их легко узнать по одежде — простые бело-серые одеяния, символ чистоты и разума, и респираторы на лицах, скрывающие личности, но не устремления" />
+        </p>
+          <p className="text-xl text-white/80 leading-relaxed">
+          <TypingText text="Враги:нет"/>
+        </p>
+        
+         <p className="text-xl text-white/80 leading-relaxed">
+          <TypingText text="Союзники:нет"/>
+        </p>
       </div>
 
         <div className="button-container">
