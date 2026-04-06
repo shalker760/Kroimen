@@ -1,73 +1,136 @@
-"use client"
+'use client';
 
-import React, { useState, useEffect } from "react"
-import { useRouter } from "next/navigation"
-import router from "next/router"
+import React from 'react';
 
-const TypingText = ({ text }: { text: string }) => {
-  const [displayedText, setDisplayedText] = useState("")
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  // Перезапуск анимации при изменении текста
-  useEffect(() => {
-    setDisplayedText("")
-    setCurrentIndex(0)
-  }, [text])
-
-  // Анимация печатания
-  useEffect(() => {
-    if (currentIndex <= text.length) {
-      setDisplayedText(text.slice(0, currentIndex))
-      
-      if (currentIndex < text.length) {
-        const timer = setTimeout(() => {
-          setCurrentIndex(prev => prev + 1)
-        }, 5)
-        
-        return () => clearTimeout(timer)
-      }
-    }
-  }, [currentIndex, text])
-
+export default function KroimenIndex() {
   return (
-    <span className="relative inline-block">
-      {displayedText}
-      <span className="absolute right-0 -bottom-1 w-1 h-6 bg-white/50 animate-pulse"></span>
-    </span>
-  )
-}
+    <div className="min-h-screen bg-black text-white overflow-hidden font-mono relative">
+      {/* Фоновый глаз */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-40 pointer-events-none z-0"
+        style={{
+          backgroundImage: `url('https://i.imgur.com/6L8NW.jpg')`, // или используй свою загруженную картинку
+          filter: 'contrast(1.1) brightness(0.7) hue-rotate(260deg) saturate(1.4)'
+        }}
+      />
 
-export default function Home() {
-   const router = useRouter()
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 
-                   flex items-center justify-center p-8 relative overflow-hidden">
-      {/* Фоновые частицы */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(243, 235, 235, 0.05)_0%,transparent_70%)]"></div>
-            
-      {/* Основной контент */}
-      <div className="max-w-4xl text-center relative z-10">
-        <h1 className="text-5xl md:text-7xl font-extrabold bg-clip-text 
-                      bg-gradient-to-r mb-8">
-          <TypingText text="Добро пожаловать жители Кроймена" />
-        </h1>
-        
-        <p className="text-xl text-white/80 leading-relaxed">
-          <TypingText text="Это информационный сайт, где вы найдете последние новости и другую полезную информацию" />
-        </p>
-      </div>
+      {/* Скан-линии */}
+      <div className="fixed inset-0 bg-[linear-gradient(to_bottom,transparent_50%,rgba(168,85,247,0.06)_50%)] bg-[length:100%_4px] animate-scan pointer-events-none z-10" />
 
-        <div className="button-container">
-          <div className="spcae-y-4">
-            <button onClick={() => router.push("/News")}>Новости</button>
-            <button onClick={() => router.push("/Clans")}>Кланы</button>
-            <button onClick={() => router.push("/Alaham")}>Алахам</button>
-            <button onClick={() => router.push("/Rayn")}>Райн</button>
-            <button onClick={() => router.push("/Lorest")}>Лорест</button>
-            <button onClick={() => router.push("/Larm")}>Ларм</button>
-            <button onClick={() => router.push("/Darf")}>Дарф</button>
+      {/* Шапка */}
+      <header className="relative z-50 border-b border-purple-500/30 bg-black/90 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+          <div className="flex items-center gap-4">
+            <div className="w-9 h-9 border-2 border-purple-400 flex items-center justify-center text-2xl font-bold text-purple-400">K</div>
+            <h1 className="text-3xl font-black tracking-[4px]">КРОЙМЕН</h1>
+          </div>
+          
+          <nav className="hidden md:flex gap-8 text-sm uppercase tracking-widest">
+            <a href="#" className="hover:text-purple-400 transition-colors">Новости</a>
+            <a href="#" className="hover:text-purple-400 transition-colors">Кланы</a>
+            <a href="#" className="hover:text-purple-400 transition-colors">Лор</a>
+            <a href="#" className="hover:text-purple-400 transition-colors">Персонажи</a>
+            <a href="#" className="hover:text-purple-400 transition-colors">Индекс</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Главный контент */}
+      <main className="relative z-20 flex items-center justify-center min-h-[calc(100vh-80px)] px-6">
+        <div className="max-w-5xl text-center">
+          <div className="inline-block mb-6 px-8 py-2.5 border border-purple-500/50 bg-purple-950/50 text-purple-400 text-xs tracking-[3px] uppercase">
+            Мастер Индекс • v0.2 • Онлайн
+          </div>
+
+          <h1 
+            data-text="КРОЙМЕН" 
+            className="glitch text-[5.5rem] md:text-[7.5rem] font-black tracking-[-4px] leading-none mb-6 text-purple-300"
+          >
+            КРОЙМЕН
+          </h1>
+
+          <p className="text-2xl md:text-3xl text-gray-400 mb-16 max-w-2xl mx-auto">
+            Город, где каждый глаз следит.<br />
+            Каждый байт имеет цену.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <button className="group px-12 py-6 bg-gradient-to-r from-purple-600 to-fuchsia-600 hover:from-purple-500 hover:to-fuchsia-500 font-bold text-lg uppercase tracking-widest transition-all flex items-center justify-center gap-4">
+              Войти в Архив
+              <span className="group-hover:translate-x-2 transition">→</span>
+            </button>
+
+            <button className="px-12 py-6 border-2 border-purple-500/70 hover:border-purple-400 text-purple-400 font-bold text-lg uppercase tracking-widest transition-all">
+              Открыть Лор
+            </button>
+          </div>
+
+          {/* Быстрые разделы */}
+          <div className="mt-24">
+            <p className="uppercase text-xs tracking-[2px] text-purple-500/70 mb-8">Разделы Индекса</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {['Новости', 'Кланы', 'Алахам', 'Райн', 'Лорест', 'Ларм', 'Дарф'].map((item) => (
+                <a 
+                  key={item}
+                  href="#" 
+                  className="px-8 py-4 bg-zinc-950 border border-purple-900 hover:border-purple-500 transition-colors text-sm uppercase tracking-widest"
+                >
+                  {item}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
+      </main>
+
+      {/* Футер */}
+      <footer className="relative z-50 border-t border-purple-500/20 py-8 text-center text-xs text-gray-500">
+        © 2026 Кроймен • Мастер Индекс следит за всем
+      </footer>
+
+      <style jsx>{`
+        @keyframes scan {
+          0% { transform: translateY(-100%); }
+          100% { transform: translateY(300%); }
+        }
+        .animate-scan {
+          animation: scan 12s linear infinite;
+        }
+        .glitch {
+          position: relative;
+        }
+        .glitch::before,
+        .glitch::after {
+          content: attr(data-text);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0.8;
+        }
+        .glitch::before {
+          color: #c026d3;
+          animation: glitch1 1.8s infinite linear;
+          clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+        }
+        .glitch::after {
+          color: #a855f7;
+          animation: glitch2 1.4s infinite linear;
+          clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+        }
+        @keyframes glitch1 {
+          0%,100% { transform: translate(0); }
+          20% { transform: translate(-3px, 3px); }
+          40% { transform: translate(3px, -3px); }
+          60% { transform: translate(-2px, 2px); }
+        }
+        @keyframes glitch2 {
+          0%,100% { transform: translate(0); }
+          30% { transform: translate(4px, -2px); }
+          70% { transform: translate(-4px, 2px); }
+        }
+      `}</style>
     </div>
-  )
+  );
 }
